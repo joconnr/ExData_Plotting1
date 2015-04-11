@@ -15,9 +15,8 @@ plot2 <- function(directory, file="household_power_consumption.txt") {
       ## Plot Global active power	 
       plot(filtList$Global_active_power, type="l", axes=FALSE, ylab="Global Active Power (kilowatts)", xlab="")            
       ## Set the labels
-      axis(1, at=1:1, labels=c("Thu"), xpd=T, cex=0.8)  
-      axis(2, cex.axis=0.8)        
-      text(axTicks(1), par("usr")[1:3]-1, labels=c("", "", "Fri", "", "", "Sat"), xpd=T, cex=0.8)
+      axis(1, at=c(500,1500,2500), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
+      axis(2, cex.axis=0.8)          
       box()
       
       dev.off()

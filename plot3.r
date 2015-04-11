@@ -20,13 +20,12 @@ plot3 <- function(directory, file="household_power_consumption.txt") {
 	lines(filtList$Sub_metering_3, type="l", col="blue")
 	
 	## Set the labels
-	axis(1, at=1:1, labels=c("Thu"), xpd=T, cex=0.8)  
-	axis(2, cex.axis=0.8)        
-	text(axTicks(1), par("usr")[1:3]-1, labels=c("", "", "Fri", "", "", "Sat"), xpd=T, cex=0.8)
+	axis(1, at=c(500,1500,2500), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
+	axis(2, cex.axis=0.8)          
 	box()
-	
+      
 	## Legend for sub metering types
-	legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black","red","blue"), bty="n", lty=1);
+	legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black","red","blue"), lty=1);
 	dev.off()
 
 }
