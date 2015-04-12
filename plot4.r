@@ -17,19 +17,19 @@ plot4 <- function(directory, file="household_power_consumption.txt") {
 	with(filtList, {
 	      plot(Global_active_power, type="l", axes=FALSE, ylab="Global Active Power", xlab="")
 	      ## Set the labels
-	      axis(1, at=c(500,1500,2500), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
+	      axis(1, at=c(20,1500,2920), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
 	      axis(2, cex.axis=0.8)          
 	      box()    
             
             plot(Voltage, type="l", axes=FALSE, ylab="Voltage", xlab="datetime")
 	      ## Set the labels
-	      axis(1, at=c(500,1500,2500), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
+	      axis(1, at=c(20,1500,2920), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
 	      axis(2, cex.axis=0.8)          
 	      box()
             
             plot(Sub_metering_1, type="l", col="black", axes=F, ylab="Energy sub metering", xlab="")
 	      ## Set the labels
-	      axis(1, at=c(500,1500,2500), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
+	      axis(1, at=c(20,1500,2920), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
 	      axis(2, cex.axis=0.8)          
 	      box()    
 	      ## Plot Sub_metering_2 & 3
@@ -40,7 +40,7 @@ plot4 <- function(directory, file="household_power_consumption.txt") {
 	                
 	      plot(Global_reactive_power, type="l", axes=FALSE, ylab="Global_reactive_power", xlab="datetime")
 	      ## Set the labels
-	      axis(1, at=c(500,1500,2500), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
+	      axis(1, at=c(20,1500,2920), labels=c("Thu", "Fri", "Sat"), xpd=T, cex=0.8)       
 	      axis(2, cex.axis=0.8)          
 	      box()
 	})
